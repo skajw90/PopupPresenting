@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
     
     func presentPopupView(style: PresentingStyle, destination: UIViewController? = nil) {
-        let control = OhaPopupViewController(style: style, destination: destination)
+        let control = PopupViewController(style: style, destination: destination)
         control.delegate = self
         control.dataSource = self
         
@@ -63,12 +63,12 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: OhaPopupViewControllerDataSource, OhaPopupViewControllerDelegate {
+extension ViewController: PopupViewControllerDataSource, PopupViewControllerDelegate {
     func getData(style: PresentingStyle) -> Any? {
         return "TITLE"
     }
     
-    func dismissWithData(_ controller: OhaPopupViewController, actionType: PresentingButtonActionType, data: Any?) {
+    func dismissWithData(_ controller: PopupViewController, actionType: PresentingButtonActionType, data: Any?) {
         let style = controller.style
         let actionType = actionType
         let data = data

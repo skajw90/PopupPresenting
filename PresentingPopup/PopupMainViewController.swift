@@ -16,19 +16,19 @@ protocol AbstractPresentingView: class {
     @objc optional func selectedItem(data: Any?)
 }
 
-protocol OhaPopupViewControllerDelegate: class {
-    func dismissWithData(_ controller: OhaPopupViewController, actionType: PresentingButtonActionType, data: Any?)
+protocol PopupViewControllerDelegate: class {
+    func dismissWithData(_ controller: PopupViewController, actionType: PresentingButtonActionType, data: Any?)
 }
 
-protocol OhaPopupViewControllerDataSource: class {
+protocol PopupViewControllerDataSource: class {
     func getData(style: PresentingStyle) -> Any?
 }
 
-class OhaPopupViewController: UIViewController {
+class PopupViewController: UIViewController {
     var style: PresentingStyle = .none
     private var data: Any?
-    weak var delegate: OhaPopupViewControllerDelegate?
-    weak var dataSource: OhaPopupViewControllerDataSource?
+    weak var delegate: PopupViewControllerDelegate?
+    weak var dataSource: PopupViewControllerDataSource?
     var bottomSpacing: CGFloat = 0
     var control: PopupPresentViewController?
     var destination: UIViewController?
@@ -72,7 +72,7 @@ class OhaPopupViewController: UIViewController {
     }
 }
 
-extension OhaPopupViewController: PresentingViewControllerDataSource, PresentingViewControllerDelegate {
+extension PopupViewController: PresentingViewControllerDataSource, PresentingViewControllerDelegate {
     func dismiss(_ controller: PopupPresentViewController, animated: Bool, action: PresentingButtonActionType, data: Any?) {
         controller.dismiss(animated: animated, completion: {
             self.delegate?.dismissWithData(self, actionType: action, data: data)
