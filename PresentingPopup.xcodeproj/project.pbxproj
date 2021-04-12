@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		8758DB282624676E007BED51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758DB272624676E007BED51 /* AppDelegate.swift */; };
-		8758DB2A2624676E007BED51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758DB292624676E007BED51 /* SceneDelegate.swift */; };
 		8758DB2C2624676E007BED51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758DB2B2624676E007BED51 /* ViewController.swift */; };
-		8758DB2F2624676E007BED51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8758DB2D2624676E007BED51 /* Main.storyboard */; };
-		8758DB322624676E007BED51 /* PresentingPopup.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8758DB302624676E007BED51 /* PresentingPopup.xcdatamodeld */; };
 		8758DB3426246773007BED51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8758DB3326246773007BED51 /* Assets.xcassets */; };
 		8758DB3726246773007BED51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8758DB3526246773007BED51 /* LaunchScreen.storyboard */; };
+		8758DB44262467D2007BED51 /* PopupSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758DB43262467D2007BED51 /* PopupSampleView.swift */; };
+		8758DB4726246801007BED51 /* PopupMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758DB4626246801007BED51 /* PopupMainViewController.swift */; };
+		8758DB4A26246818007BED51 /* PopupPresentingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758DB4926246818007BED51 /* PopupPresentingViewController.swift */; };
+		8758DB4D2624682B007BED51 /* PresentingPopupDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758DB4C2624682B007BED51 /* PresentingPopupDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8758DB242624676E007BED51 /* PresentingPopup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentingPopup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8758DB272624676E007BED51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8758DB292624676E007BED51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8758DB2B2624676E007BED51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8758DB2E2624676E007BED51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8758DB312624676E007BED51 /* PresentingPopup.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PresentingPopup.xcdatamodel; sourceTree = "<group>"; };
 		8758DB3326246773007BED51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8758DB3626246773007BED51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8758DB3826246773007BED51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8758DB43262467D2007BED51 /* PopupSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSampleView.swift; sourceTree = "<group>"; };
+		8758DB4626246801007BED51 /* PopupMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMainViewController.swift; sourceTree = "<group>"; };
+		8758DB4926246818007BED51 /* PopupPresentingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPresentingViewController.swift; sourceTree = "<group>"; };
+		8758DB4C2624682B007BED51 /* PresentingPopupDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingPopupDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				8758DB272624676E007BED51 /* AppDelegate.swift */,
-				8758DB292624676E007BED51 /* SceneDelegate.swift */,
 				8758DB2B2624676E007BED51 /* ViewController.swift */,
-				8758DB2D2624676E007BED51 /* Main.storyboard */,
 				8758DB3326246773007BED51 /* Assets.xcassets */,
 				8758DB3526246773007BED51 /* LaunchScreen.storyboard */,
 				8758DB3826246773007BED51 /* Info.plist */,
-				8758DB302624676E007BED51 /* PresentingPopup.xcdatamodeld */,
+				8758DB43262467D2007BED51 /* PopupSampleView.swift */,
+				8758DB4626246801007BED51 /* PopupMainViewController.swift */,
+				8758DB4926246818007BED51 /* PopupPresentingViewController.swift */,
+				8758DB4C2624682B007BED51 /* PresentingPopupDataSource.swift */,
 			);
 			path = PresentingPopup;
 			sourceTree = "<group>";
@@ -129,7 +132,6 @@
 			files = (
 				8758DB3726246773007BED51 /* LaunchScreen.storyboard in Resources */,
 				8758DB3426246773007BED51 /* Assets.xcassets in Resources */,
-				8758DB2F2624676E007BED51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,24 +142,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8758DB4D2624682B007BED51 /* PresentingPopupDataSource.swift in Sources */,
+				8758DB4726246801007BED51 /* PopupMainViewController.swift in Sources */,
+				8758DB4A26246818007BED51 /* PopupPresentingViewController.swift in Sources */,
 				8758DB2C2624676E007BED51 /* ViewController.swift in Sources */,
 				8758DB282624676E007BED51 /* AppDelegate.swift in Sources */,
-				8758DB2A2624676E007BED51 /* SceneDelegate.swift in Sources */,
-				8758DB322624676E007BED51 /* PresentingPopup.xcdatamodeld in Sources */,
+				8758DB44262467D2007BED51 /* PopupSampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8758DB2D2624676E007BED51 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8758DB2E2624676E007BED51 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8758DB3526246773007BED51 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,19 +341,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8758DB302624676E007BED51 /* PresentingPopup.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8758DB312624676E007BED51 /* PresentingPopup.xcdatamodel */,
-			);
-			currentVersion = 8758DB312624676E007BED51 /* PresentingPopup.xcdatamodel */;
-			path = PresentingPopup.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8758DB1C2624676E007BED51 /* Project object */;
 }
